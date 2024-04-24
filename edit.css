@@ -1,0 +1,114 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display";
+    background-image: url("bg.jpeg");
+    background-attachment: fixed;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 5rem auto;
+    max-width: 1170px;
+}
+
+.card {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 7%;
+    backdrop-filter: blur(10px); /* blur*/
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity */
+    opacity: 0.7;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); 
+}
+
+h1,
+h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 2;
+    font-family: "Playfair Display", serif;
+}
+
+.text {
+    padding-bottom: 15px;
+}
+
+.sisawaktu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown h4:not(.expired) {
+    font-size: 1rem;
+}
+
+.format {
+    place-items: center;
+    padding: 2%;
+    width: 5rem;
+    border: 0.5rem;
+    border-color: black;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #333; 
+    border-radius: 50%;
+}
+
+.format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+@media screen and (min-width: 390px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    .format {
+        border-radius: 25%;
+    }
+
+}
