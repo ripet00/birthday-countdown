@@ -43,6 +43,9 @@ body {
     opacity: 0.7;
     border-radius: 20px;
     transition: all 0.3s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .card:hover {
@@ -56,6 +59,9 @@ h4 {
     text-transform: capitalize;
     line-height: 2;
     font-family: "Playfair Display", serif;
+}
+h1 {
+    font-size: 2.5rem;
 }
 
 .text {
@@ -75,7 +81,6 @@ h4 {
 .format {
     place-items: center;
     padding: 2%;
-    width: 5rem;
     border: 0.5rem;
     border-color: black;
     width: 5rem;
@@ -87,13 +92,12 @@ h4 {
 .format span {
     display: block;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
 }
 
-@media screen and (min-width: 390px) {
+/* @media screen and (max-width: 390px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     h2 {
         font-size: 2rem;
@@ -106,9 +110,39 @@ h4 {
     }
     body {
         font-size: 1rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .format {
         border-radius: 25%;
     }
+    .card {
+        max-width: 290px;
 
+    }
+
+} */
+@media screen and (max-width: 390px) {
+    h4 {
+        font-size: 80%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    .format span {
+        font-size: 0.55rem;
+    }
+    .format {
+        width: 4rem;
+        height: 4rem;
+    }
+    body {
+        background-size: 100%;
+    }
+    .card {
+        margin-top: 5%;
+        padding-top: 3%;
+        align-items: center;
+    }
 }
